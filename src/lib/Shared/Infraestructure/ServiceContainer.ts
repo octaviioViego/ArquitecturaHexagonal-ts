@@ -1,9 +1,9 @@
-import { inMemoryRepository } from '../user/infrastructure/InMemoryUserRepository';
-import { UserGetAll } from '../user/application/UserGetAll/UserGetAll';
-import { userGetOneById } from '../user/application/UserGetOneById/UserGetOneById';
-import { UserCreate } from '../user/application/UserCreate/UserCreate';
-import { UserDeleted } from '../user/application/UserDeleted/UserDeleted';
-import { userEdit } from '../user/application/UserEdit/UserEdit';
+import { inMemoryRepository } from '../../../../src/lib/user/infrastructure/InMemoryUserRepository';
+import { UserGetAll } from '../../../../src/lib/user/application/UserGetAll/UserGetAll';
+import { userGetOneById } from '../../../../src/lib/user/application/UserGetOneById/UserGetOneById';
+import { UserCreate } from '../../../../src/lib/user/application/UserCreate/UserCreate';
+import { UserDeleted } from '../../../../src/lib/user/application/UserDeleted/UserDeleted';
+import { userEdit } from '../../../../src/lib/user/application/UserEdit/UserEdit';
 
 
 //Este es un contenedor de servicios de infraestructura

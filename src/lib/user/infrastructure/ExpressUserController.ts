@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ServiceContainer } from '../../Infraestructure/ServiceContainer';
+import { ServiceContainer } from '../../Shared/Infraestructure/ServiceContainer';
 import { UserNotFoundError } from '../domain/UserNotFoundError';
 
 export class ExpressUserController {
