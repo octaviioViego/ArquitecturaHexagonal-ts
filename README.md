@@ -3,7 +3,7 @@ Implementación de una arquitectura hexagonal usando typescript, el porposito de
 ---
 
 ![Status](https://img.shields.io/badge/estado-en%20desarrollo-yellow)
-![Hecho con](https://img.shields.io/badge/hecho%20con-Express-blue)
+![Hecho con](https://img.shields.io/badge/hecho%20con-TypeScript-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 
 ---
