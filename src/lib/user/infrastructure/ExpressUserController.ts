@@ -32,17 +32,17 @@ export class ExpressUserController {
 
    async create(req:Request,res:Response, next:NextFunction){
     try{
-        const {id,name,email,createdAt} = req.body as {
+        const {id,name,email} = req.body as {
           id: string;
           name: string;
           email: string;
-          createdAt: string;
+          
         };
         await ServiceContainer.user.create.run(
           id,
           name,
           email,
-          new Date(createdAt),
+          new Date(),
         );
 
         return res.status(201).json({ message: "User created successfully" });
@@ -55,12 +55,12 @@ export class ExpressUserController {
 
    async edit(req:Request,res:Response, next:NextFunction){
     try{
-        const {id,name,email,createdAt} = req.body;
+        const {id,name,email} = req.body;
         await ServiceContainer.user.edit.run(
           id,
           name,
           email,
-          new Date(createdAt),
+          new Date(),
         );
 
          return res.status(204).send();
