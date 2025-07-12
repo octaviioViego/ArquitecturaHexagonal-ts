@@ -1,17 +1,32 @@
 # Informacion general:
 Implementación de una arquitectura hexagonal usando typescript, el porposito de este proyecto es el tener el primer acercamiento a la teoria y a la implementacion de la arquitectura hexagonal. 
+---
 
-# 🚀 Tecnologías utilizadas
+![Status](https://img.shields.io/badge/estado-en%20desarrollo-yellow)
+![Hecho con](https://img.shields.io/badge/hecho%20con-Express-blue)
+![Licencia](https://img.shields.io/badge/licencia-MIT-green)
+
+---
+
+## 📸 Captura de pantalla
+
+![Vista de petición para crear un usuario  ](imagenes/crear-usuario.png)
+
+![Vista de como obtenemos un usuario](imagenes/obtener%20usuario.png)
+
+---
+
+## 🚀 Tecnologías utilizadas
 - TypeScript
 - Node.js
 - Express
 
-# Método de implementación
+## Método de implementación
 - Descargar el repositorio en una carpeta con el siguiente comando: git clone https://github.com/octaviioViego/ArquitecturaHexagonal-ts.git Antes de continuar debes de tener instalado Node.js
 
 - Para correr el programa: npm run dev
 
-# Explicación del funcionamiento del proyecto con la arquitectura hexagonal
+## Explicación del funcionamiento del proyecto con la arquitectura hexagonal
 
 - 1. El proyecto esta dividido en 3 carpetas "domain, application y infraestructure"
 - 2. La carpeta domain (dominio) tenemos nuestro modelo usuario, aparte tenemos nuestros servicios de dominio (métodos de la clase) los cuales sirven para definir nuestros value object.
@@ -20,10 +35,10 @@ Implementación de una arquitectura hexagonal usando typescript, el porposito de
 - 5. En nuestra infraestuctura es donde se implementa nuestro patrón de diseño 'Adapter', ya que si tenemos una respuesta de la BD postgreSQL lo adaptamos esa respuesta a la aplicación de dominio.
 - 6. Tenemos un contenedor de dependencias que no pertenece a nuestro arquitectura hexagonal, sin embargo se usa para definir el repositorio que de va a usar en toda la app. Su uso también su funcion es de solo instanciar y conectar los objetos, no crea las conexiones como tal, solo pasa los parámetros necesarios a quien si los crea. Ahi podemos cambiar nuestro repositorio (refiriendonos de donde se guardan los usuarios) en una sola linea como ejemplo.  
 
-# 👨 Autor:
+## 👨 Autor:
 - Fernando Octavio Arroyo Velasco.
 - Estudiante de la UACM en la carrera de ing de software.
 
-# ⚖️ Licencia 
+## ⚖️ Licencia 
 - Este proyecto está licenciado bajo la licencia MIT. Puedes usuarlo, modificarlo y compartirlo libremente.
 
