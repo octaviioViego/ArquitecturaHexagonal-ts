@@ -1,7 +1,7 @@
 # Informacion general:
 Implementación de una arquitectura hexagonal usando typescript, el porposito de este proyecto es el tener el primer acercamiento a la teoria y a la implementacion de la arquitectura hexagonal. 
 
-# Tecnologias 
+# 🚀 Tecnologías utilizadas
 - TypeScript
 - Node.js
 - Express
@@ -20,8 +20,10 @@ Implementación de una arquitectura hexagonal usando typescript, el porposito de
 - 5. En nuestra infraestuctura es donde se implementa nuestro patrón de diseño 'Adapter', ya que si tenemos una respuesta de la BD postgreSQL lo adaptamos esa respuesta a la aplicación de dominio.
 - 6. Tenemos un contenedor de dependencias que no pertenece a nuestro arquitectura hexagonal, sin embargo se usa para definir el repositorio que de va a usar en toda la app. Su uso también su funcion es de solo instanciar y conectar los objetos, no crea las conexiones como tal, solo pasa los parámetros necesarios a quien si los crea. Ahi podemos cambiar nuestro repositorio (refiriendonos de donde se guardan los usuarios) en una sola linea como ejemplo.  
 
-# Autor 
+# 👨 Autor:
 - Fernando Octavio Arroyo Velasco.
 - Estudiante de la UACM en la carrera de ing de software.
 
+# ⚖️ Licencia 
+- Este proyecto está licenciado bajo la licencia MIT. Puedes usuarlo, modificarlo y compartirlo libremente.
 
