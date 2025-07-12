@@ -1,15 +1,15 @@
-import { UserId } from "./UserId.ts";
-import { UserName } from "./UserName.ts";
-import { UserEmail } from "./UserEmail.ts";
-
+import { UserId } from "./UserId.js";
+import { UserName } from "./UserName.js";
+import { UserEmail } from "./UserEmail.js";
+import { UserCreatedAt } from "./UserCreatedAt.js";
 //Entidad de dominio.
 export class User{
   id: UserId;
   name: UserName;
   email: UserEmail;
-  createdAt:number;
+  createdAt:UserCreatedAt;
   
-  constructor(id:UserId, name:UserName, email:UserEmail, createdAt:number){
+  constructor(id:UserId, name:UserName, email:UserEmail, createdAt:UserCreatedAt){
     this.id = id;
     this.name = name;
     this.email = email;
@@ -20,4 +20,15 @@ export class User{
   public nameAndEmail(){
     return `${this.name} - ${this.email}`;
   }
+
+
+  public mapToPrimitives() {
+    return {
+      id: this.id.value,
+      name: this.name.value,
+      email: this.email.value,
+      createdAt: this.createdAt.value,
+    };
+  }
+
 }

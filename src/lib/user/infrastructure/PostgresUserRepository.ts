@@ -33,7 +33,7 @@ export class PostgresUserRepository implements UserRepository {
 
     async getAll(): Promise<User[]> {
         const query = {
-            text: "SELEC * FROM users",
+            text: "SELECT * FROM users",
         };
 
         const result = await this.client.query<PostgresUser>(query);

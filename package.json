@@ -5,6 +5,28 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
-    "@types/pg": "^8.15.4"
-  }
+    "@types/pg": "^8.15.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "name": "mi_proyecto_hexagonal-ts",
+  "description": "Implementación de una arquitectura hexagonal usando typescript, el porposito de este proyecto es el tener el primer acercamiento a la teoria y a la implementacion de la arquitectura hexagonal.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "npx tsc ./src/main.ts --outDir ./dist/",
+    "dev": "npx ts-node ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octaviioViego/ArquitecturaHexagonal-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octaviioViego/ArquitecturaHexagonal-ts/issues"
+  },
+  "homepage": "https://github.com/octaviioViego/ArquitecturaHexagonal-ts#readme"
 }
